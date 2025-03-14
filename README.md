@@ -23,65 +23,92 @@ SELECT name, area FROM world
 
 # SELECT names #
 
-1
+- **1. SELECT names **
+```
 solution:
 SELECT name FROM world
   WHERE name LIKE 'Y%'
-2
+```
+- **2. SELECT names **
+```
 solution:
 SELECT name FROM world
   WHERE name LIKE '%Y'
-3
+```
+- **3. SELECT names **
+```
 solution:
 SELECT name FROM world
   WHERE name LIKE '%x%'
+```
 4
+```
 solution:
 SELECT name FROM world
   WHERE name LIKE '%land'
+```
 5
+```
 solution:
 SELECT name FROM world
   WHERE name LIKE 'C%ia'
+```
 6
+```
 solution:
 SELECT name FROM world
   WHERE name LIKE '%oo%'
+```
 7
+```
 solution:
 SELECT name FROM world
   WHERE name LIKE '%a%a%a%'
+```
 8
+```
 solution:
 SELECT name FROM world
  WHERE name LIKE '_t%'
 ORDER BY name
+```
 9
+```
 solution:
 SELECT name FROM world
  WHERE name LIKE '%o__o%'
+```
 10
+```
 solution:
 SELECT name FROM world
  WHERE length (name)=4
 ## Harder Questions ##
+```
 11
+```
 solution:
 SELECT name
   FROM world
  WHERE name=capital
+```
 12
+```
 solution:
 SELECT name
   FROM world
  WHERE capital LIKE '% City'
+```
 13
+```
 solution:
 SELECT capital, name
 FROM world
 WHERE
   capital LIKE CONCAT('%',name,'%')
+```
 14
+```
 solution:
 SELECT capital, name
 FROM world
@@ -89,3 +116,4 @@ WHERE
   capital LIKE CONCAT('%',name,'%')
 AND 
    length(capital)>length(name)
+```
