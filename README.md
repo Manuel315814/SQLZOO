@@ -2,15 +2,15 @@
 
 # SELECT basics ####
 
-1
+- **1. SELECT basics **
 solution: 
 SELECT population FROM world
   WHERE name = 'Germany'
-2
+- **2. SELECT basics **
 solution:
 SELECT name, population FROM world
   WHERE name IN ('Sweden', 'Norway', 'Denmark');
-3
+- **3. SELECT basics **
 solution:
 SELECT name, area FROM world
   WHERE area BETWEEN 200000 AND 250000
