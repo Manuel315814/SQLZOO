@@ -41,65 +41,65 @@ solution:
 SELECT name FROM world
   WHERE name LIKE '%x%'
 ```
-4
+- **4. SELECT names **
 ```
 solution:
 SELECT name FROM world
   WHERE name LIKE '%land'
 ```
-5
+- **5. SELECT names **
 ```
 solution:
 SELECT name FROM world
   WHERE name LIKE 'C%ia'
 ```
-6
+- **6. SELECT names **
 ```
 solution:
 SELECT name FROM world
   WHERE name LIKE '%oo%'
 ```
-7
+- **7. SELECT names **
 ```
 solution:
 SELECT name FROM world
   WHERE name LIKE '%a%a%a%'
 ```
-8
+- **8. SELECT names **
 ```
 solution:
 SELECT name FROM world
  WHERE name LIKE '_t%'
 ORDER BY name
 ```
-9
+- **9. SELECT names **
 ```
 solution:
 SELECT name FROM world
  WHERE name LIKE '%o__o%'
 ```
-10
+- **10. SELECT names **
 ```
 solution:
 SELECT name FROM world
  WHERE length (name)=4
 ## Harder Questions ##
 ```
-11
+- **12. SELECT names **
 ```
 solution:
 SELECT name
   FROM world
  WHERE name=capital
 ```
-12
+- **13. SELECT names **
 ```
 solution:
 SELECT name
   FROM world
  WHERE capital LIKE '% City'
 ```
-13
+- **13. SELECT names **
 ```
 solution:
 SELECT capital, name
@@ -107,7 +107,7 @@ FROM world
 WHERE
   capital LIKE CONCAT('%',name,'%')
 ```
-14
+- **14. SELECT names **
 ```
 solution:
 SELECT capital, name
