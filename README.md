@@ -117,3 +117,59 @@ WHERE
 AND 
    length(capital)>length(name)
 ```
+# SELECT from world #
+- **1. SELECT from world **
+```
+solution:
+SELECT name, continent, population FROM world
+```
+- **2. SELECT from world **
+```
+solution:
+SELECT name 
+FROM world 
+WHERE population >= 200000000;
+
+```
+- **3. SELECT from world **
+```
+solution:
+SELECT name, gdp / population AS per_capita_gdp
+FROM world
+WHERE population >= 200000000;
+```
+- **4. SELECT from world **
+```
+solution:
+SELECT name, population / 1000000 AS population_millions
+FROM world
+WHERE continent = 'South America';
+```
+- **5. SELECT from world **
+```
+solution:
+SELECT name, continent, population FROM world
+```
+- **1. SELECT from world **
+```
+solution:
+SELECT name, continent, population FROM world
+```
+- **1. SELECT from world **
+```
+solution:
+SELECT name, continent, population FROM world
+```
+- **1. SELECT from world **
+```
+solution:
+SELECT name, continent, population FROM world
+```
+- **1. SELECT from world **
+```
+SELECT name, continent, population FROM world
+```
+- **1. SELECT from world **
+```
+SELECT name, continent, population FROM world
+```
