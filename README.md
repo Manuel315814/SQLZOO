@@ -24,13 +24,13 @@ SELECT name, area FROM world
 - **1. SELECT basics Quiz **
 [![Captura-de-pantalla-2025-03-16-201848.jpg](https://i.postimg.cc/wBnf2KdW/Captura-de-pantalla-2025-03-16-201848.jpg)](https://postimg.cc/p9YJV6r8)
 - **2. SELECT basics Quiz **
-[![Captura-de-pantalla-2025-03-16-201916.jpg](https://i.postimg.cc/d1dWSWsJ/Captura-de-pantalla-2025-03-16-201916.jpg)](https://postimg.cc/ZBbFWxvQ)
+![Captura de pantalla 2025-03-16 201916](https://github.com/user-attachments/assets/b1bd553c-1ad0-46a0-bcba-e62319fbf943)
 - **3. SELECT basics Quiz **
 [![Captura-de-pantalla-2025-03-16-201923.jpg](https://i.postimg.cc/wMQw97RP/Captura-de-pantalla-2025-03-16-201923.jpg)](https://postimg.cc/2L3QwjwF)
 - **4. SELECT basics Quiz **
 ![Captura de pantalla 2025-03-16 201928](https://github.com/user-attachments/assets/ceb56d13-db06-4f33-bbf4-d33069434443)
 - **5. SELECT basics Quiz **
-![Captura de pantalla 2025-03-16 201933](https://github.com/user-attachments/assets/237713dc-aa9c-434f-b9fb-84ae72274ffd)
+![Captura de pantalla 2025-03-16 201933](https://github.com/user-attachments/assets/ef45a510-7011-4a61-8676-3d8132f66116)
 - **6. SELECT basics Quiz **
 ![Captura de pantalla 2025-03-16 201938](https://github.com/user-attachments/assets/f51995ca-e2e4-48de-b416-5c7bdc7d8d62)
 - **7. SELECT basics Quiz **
