@@ -24,29 +24,17 @@ SELECT name, area FROM world
 - **1. SELECT basics Quiz **
 [![Captura-de-pantalla-2025-03-16-201848.jpg](https://i.postimg.cc/wBnf2KdW/Captura-de-pantalla-2025-03-16-201848.jpg)](https://postimg.cc/p9YJV6r8)
 - **2. SELECT basics Quiz **
-```
-![image](https://github.com/user-attachments/assets/52cc38b6-bf1d-4a66-92ee-c8bab8ac4368)
-```
+[![Captura-de-pantalla-2025-03-16-201916.jpg](https://i.postimg.cc/d1dWSWsJ/Captura-de-pantalla-2025-03-16-201916.jpg)](https://postimg.cc/ZBbFWxvQ)
 - **3. SELECT basics Quiz **
-```
-![image](https://github.com/user-attachments/assets/de8df29b-7ddc-48e8-a3e4-4eecb6a100cb)
-```
+[![Captura-de-pantalla-2025-03-16-201923.jpg](https://i.postimg.cc/wMQw97RP/Captura-de-pantalla-2025-03-16-201923.jpg)](https://postimg.cc/2L3QwjwF)
 - **4. SELECT basics Quiz **
-```
-![image](https://github.com/user-attachments/assets/cdcb9fd6-582a-468a-aa4c-df327447770a)
-```
+![Captura de pantalla 2025-03-16 201928](https://github.com/user-attachments/assets/ceb56d13-db06-4f33-bbf4-d33069434443)
 - **5. SELECT basics Quiz **
-```
-![image](https://github.com/user-attachments/assets/bdf9465b-fa07-4a77-ab80-6ea49ab1a7e5)
-```
+![Captura de pantalla 2025-03-16 201933](https://github.com/user-attachments/assets/237713dc-aa9c-434f-b9fb-84ae72274ffd)
 - **6. SELECT basics Quiz **
-```
-![image](https://github.com/user-attachments/assets/8303f2ff-ae0c-4cc8-a0b4-a262c1402096)
-```
+![Captura de pantalla 2025-03-16 201938](https://github.com/user-attachments/assets/f51995ca-e2e4-48de-b416-5c7bdc7d8d62)
 - **7. SELECT basics Quiz **
-```
-![image](https://github.com/user-attachments/assets/aa4c2d2b-633c-49a6-b7cc-c808d5366097)
-```
+![Captura de pantalla 2025-03-16 201943](https://github.com/user-attachments/assets/838609ad-5d73-425d-9b3c-65fe7f7e1567)
 # SELECT names #
 
 - **1. SELECT names **
