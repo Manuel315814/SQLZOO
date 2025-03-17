@@ -384,4 +384,66 @@ ORDER BY subject IN ('physics', 'chemistry'),subject,winner
 ![image](https://github.com/user-attachments/assets/a35794c8-0be8-4946-b326-6b2fa806ddfb)
 - **7. SELECT from nobel Quiz **
 ![image](https://github.com/user-attachments/assets/deb48a5f-3873-4511-8db9-d5efce476941)
+# SELECT in SELECT ####
+- **1. SELECT in SELECT **
+```
+Solution:
+SELECT name
+FROM world
+WHERE population > (SELECT population FROM world WHERE name = 'Russia');
+```
+- **2. SELECT in SELECT **
+```
+Solution:
+SELECT name
+FROM world
+WHERE continent = 'Europe'
+  AND (gdp / population) > (SELECT gdp / population FROM world WHERE name = 'United Kingdom');
+```
+- **3. SELECT in SELECT **
+```
+Solution:
+SELECT name, continent
+FROM world
+WHERE continent IN (
+    SELECT continent
+    FROM world
+    WHERE name IN ('Argentina', 'Australia')
+)
+ORDER BY name;
+```
+- **4. SELECT in SELECT **
+```
+Solution:
 
+```
+- **5. SELECT in SELECT **
+```
+Solution:
+
+```
+- **6. SELECT in SELECT **
+```
+Solution:
+
+```
+- **7. SELECT in SELECT **
+```
+Solution:
+
+```
+- **8. SELECT in SELECT **
+```
+Solution:
+
+```
+- **9. SELECT in SELECT **
+```
+Solution:
+
+```
+- **10. SELECT in SELECT **
+```
+Solution:
+
+```
