@@ -569,5 +569,355 @@ HAVING SUM(population) >= 100000000;
 ![image](https://github.com/user-attachments/assets/788f03e5-ddc2-4eb6-8473-74966554f42e)
 - **8. SUM and COUNT Quiz **
 ![image](https://github.com/user-attachments/assets/48fad411-e8ba-4f6e-a64c-6959cb1c2b90)
+# JOIN ####
+- **1. JOIN **
+```
+Solution:
+SELECT matchid, player 
+FROM goal 
+WHERE teamid = 'GER';
+```
+- **2. JOIN **
+```
+Solution:
+SELECT id, stadium, team1, team2
+FROM game
+WHERE id = 1012;
+```
+- **3. JOIN **
+```
+Solution:
+SELECT player, teamid, stadium, mdate
+FROM game
+JOIN goal ON game.id = goal.matchid
+WHERE teamid = 'GER';
+```
+- **4. JOIN **
+```
+Solution:
+SELECT team1, team2, player
+FROM game
+JOIN goal ON game.id = goal.matchid
+WHERE player LIKE 'Mario%';
+```
+- **5. JOIN **
+```
+Solution:
+SELECT player, teamid, coach, gtime
+FROM goal
+JOIN eteam ON goal.teamid = eteam.id
+WHERE gtime <= 10;
+```
+- **6. JOIN **
+```
+Solution:
+select mdate, teamname from game JOIN eteam ON
+(team1=eteam.id) where coach = 'Fernando Santos'
+```
+- **7. JOIN **
+```
+Solution:
+SELECT goal.player
+FROM game
+JOIN goal ON game.id = goal.matchid
+WHERE game.stadium = 'National Stadium, Warsaw';
+```
+- **8. JOIN **
+```
+Solution:
+SELECT distinct player
+FROM game JOIN goal ON matchid = id 
+WHERE (team1='GER' OR team2='GER') AND teamid <> 'GER'
+```
+- **9. JOIN **
+```
+Solution:
+SELECT teamname, COUNT(*)
+FROM eteam JOIN goal ON id=teamid
+GROUP BY teamname;
+```
+- **10. JOIN **
+```
+Solution:
+SELECT stadium, COUNT(*) AS total_goals
+FROM game
+JOIN goal ON game.id = goal.matchid
+GROUP BY stadium;
+```
+- **11. JOIN **
+```
+Solution:
+SELECT game.id AS matchid, game.mdate AS date, COUNT(goal.matchid) AS total_goals
+FROM game
+JOIN goal ON game.id = goal.matchid
+WHERE game.team1 = 'POL' OR game.team2 = 'POL'
+GROUP BY game.id, game.mdate;
+```
+- **12. JOIN **
+```
+Solution:
+SELECT game.id AS matchid, game.mdate AS date, COUNT(goal.matchid) AS goals_scored_by_GER
+FROM game
+JOIN goal ON game.id = goal.matchid
+WHERE (game.team1 = 'GER' AND goal.teamid = 'GER') 
+   OR (game.team2 = 'GER' AND goal.teamid = 'GER')
+GROUP BY game.id, game.mdate;
+```
+- **13. JOIN **
+```
+Solution:
+SELECT mdate,
+  team1, sum(CASE WHEN teamid=team1 THEN 1 ELSE 0 END) score1, team2,sum(CASE WHEN teamid=team2 THEN 1 ELSE 0 END) score2
+  FROM game JOIN goal ON matchid = id
+GROUP BY mdate,matchid,team1,team2
+order by mdate, matchid, team1, team2
+```
+# JOIN Quiz ####
+- **1. JOIN Quiz **
+![image](https://github.com/user-attachments/assets/f07a4e00-a58f-40fe-83b8-23ce422c9279)
+- **1. JOIN Quiz **
+![image](https://github.com/user-attachments/assets/c9708167-d280-40e1-8e88-a84ed2bcc30f)
+- **1. JOIN Quiz **
+![image](https://github.com/user-attachments/assets/3d119635-8b1a-4f1c-b4dd-6e99acc88cf8)
+- **1. JOIN Quiz **
+![image](https://github.com/user-attachments/assets/6c1e5db9-a81a-4f77-94dd-66c03811c6ed)
+- **1. JOIN Quiz **
+![image](https://github.com/user-attachments/assets/c163b8ef-a027-4d71-a1b9-d4e410ac0143)
+- **1. JOIN Quiz **
+![image](https://github.com/user-attachments/assets/dadcaef9-3d0f-47d5-b907-3c8250a2a423)
+- **1. JOIN Quiz **
+![image](https://github.com/user-attachments/assets/5f209c3a-a869-4022-9e3d-d955fb353ee5)
+# More JOIN ####
+- **1. More JOIN **
+```
+Solution:
+SELECT id, title
+ FROM movie
+ WHERE yr=1962
+```
+- **2. More JOIN **
+```
+Solution:
+SELECT yr
+FROM movie
+WHERE title='Citizen Kane'
+```
+- **3. More JOIN **
+```
+Solution:
+SELECT id, title, yr
+FROM movie
+WHERE title LIKE '%Star Trek%'
+ORDER BY yr;
+```
+- **4. More JOIN **
+```
+Solution:
+SELECT id
+FROM actor
+WHERE name = 'Glenn Close';
+```
+- **5. More JOIN **
+```
+Solution:
+SELECT id
+FROM movie
+WHERE title = 'Casablanca'
+```
+- **6. More JOIN **
+```
+Solution:
+SELECT actor.name
+FROM actor
+JOIN casting ON actor.id = casting.actorid
+WHERE casting.movieid = 11768;
+```
+- **7. More JOIN **
+```
+Solution:
+SELECT actor.name
+FROM actor
+JOIN casting ON actor.id = casting.actorid
+JOIN movie ON casting.movieid = movie.id
+WHERE movie.title = 'Alien';
+
+```
+- **8. More JOIN **
+```
+Solution:
+SELECT movie.title
+FROM movie
+JOIN casting ON movie.id = casting.movieid
+JOIN actor ON actor.id = casting.actorid
+WHERE actor.name = 'Harrison Ford';
+```
+- **9. More JOIN **
+```
+Solution:
+SELECT movie.title
+FROM movie
+JOIN casting ON movie.id = casting.movieid
+JOIN actor ON actor.id = casting.actorid
+WHERE actor.name = 'Harrison Ford'
+  AND casting.ord != 1;
+```
+- **10. More JOIN **
+```
+Solution:
+
+```
+- **11. More JOIN **
+```
+Solution:
+
+```
+- **12. More JOIN **
+```
+Solution:
+SELECT m.title, a.name AS leading_actor
+FROM movie m
+JOIN casting c ON m.id = c.movieid
+JOIN actor a ON c.actorid = a.id
+WHERE c.ord = 1
+  AND m.id IN (
+      SELECT m.id
+      FROM movie m
+      JOIN casting c ON m.id = c.movieid
+      JOIN actor a ON c.actorid = a.id
+      WHERE a.name = 'Julie Andrews'
+  )
+ORDER BY m.title;
+```
+- **13. More JOIN **
+```
+Solution:
+SELECT a.name
+FROM actor a
+JOIN casting c ON a.id = c.actorid
+WHERE c.ord = 1  -- This ensures the actor is in the starring role
+GROUP BY a.name
+HAVING COUNT(c.movieid) >= 15
+ORDER BY a.name;
+```
+- **14. More JOIN **
+```
+Solution:
+SELECT m.title, COUNT(c.actorid) AS actor_count
+FROM movie m
+JOIN casting c ON m.id = c.movieid
+WHERE m.yr = 1978
+GROUP BY m.title
+ORDER BY actor_count DESC, m.title;
+```
+- **15. More JOIN **
+```
+Solution:
+SELECT DISTINCT a.name
+FROM actor a
+JOIN casting c ON a.id = c.actorid
+JOIN movie m ON c.movieid = m.id
+WHERE m.id IN (
+    SELECT movieid
+    FROM casting
+    JOIN actor ON casting.actorid = actor.id
+    WHERE actor.name = 'Art Garfunkel'
+)
+AND a.name != 'Art Garfunkel';
+```
+# More JOIN Quiz ####
+- **1. More JOIN Quiz **
+![image](https://github.com/user-attachments/assets/19f4c914-fccf-4dfc-b486-ed6c2ebd35ee)
+- **2. More JOIN Quiz **
+![image](https://github.com/user-attachments/assets/3c249118-b237-4f32-953a-0c6752181039)
+- **3. More JOIN Quiz **
+![image](https://github.com/user-attachments/assets/f6455954-daf1-405e-9824-f9d211be0fcb)
+- **4. More JOIN Quiz **
+![image](https://github.com/user-attachments/assets/b7d186f6-4842-4091-9d33-6e83a64c29ea)
+- **5. More JOIN Quiz **
+![image](https://github.com/user-attachments/assets/ceafacc0-28f8-47ec-ab48-7ca9f63e1933)
+- **6. More JOIN Quiz **
+![image](https://github.com/user-attachments/assets/49d4424d-e40a-4065-88fa-55a0d1a27536)
+- **7. More JOIN Quiz **
+![image](https://github.com/user-attachments/assets/40c08574-94f9-4d06-a9bd-d80c81ab5a88)
+# Using NULL ####
+- **1. Using NULL **
+```
+Solution:
+SELECT name
+FROM teacher
+WHERE dept IS NULL;
+```
+- **2. Using NULL **
+```
+Solution:
+SELECT teacher.name, dept.name
+ FROM teacher INNER JOIN dept
+           ON (teacher.dept=dept.id)
+```
+- **3. Using NULL **
+```
+Solution:
+SELECT teacher.name, dept.name 
+FROM teacher 
+LEFT JOIN dept 
+ ON (teacher.dept=dept.id)
+```
+- **4. Using NULL **
+```
+Solution:
+SELECT teacher.name, dept.name 
+FROM teacher 
+RIGHT JOIN dept 
+ ON (teacher.dept=dept.id)
+```
+- **5. Using NULL **
+```
+Solution:
+SELECT name, COALESCE(mobile, '07986 444 2266') 
+FROM teacher;
+```
+- **6. Using NULL **
+```
+Solution:
+SELECT teacher.name, COALESCE(dept.name, 'None')
+FROM teacher
+LEFT JOIN dept 
+ ON (teacher.dept=dept.id)
+```
+- **7. Using NULL **
+```
+Solution:
+SELECT 
+    COUNT(teacher.id) AS number_of_teachers,
+    COUNT(teacher.mobile) AS number_of_mobile_phones
+FROM teacher;
+```
+- **8. Using NULL **
+```
+Solution:
+SELECT dept.name, COUNT(teacher.name) 
+FROM teacher
+RIGHT JOIN dept
+    ON (teacher.dept=dept.id)
+GROUP BY dept.name;
+```
+- **9. Using NULL **
+```
+Solution:
+SELECT name, 
+CASE WHEN teacher.dept = 1 OR teacher.dept = 2 THEN 'Sci' ELSE 'Art' END
+FROM teacher
+```
+- **10. Using NULL **
+```
+Solution:
+SELECT name, 
+CASE 
+WHEN teacher.dept = 1 OR teacher.dept = 2 THEN 'Sci'
+WHEN teacher.dept = 3 THEN'Art'
+ELSE 'None'END
+FROM teacher
+```
+
 
 
