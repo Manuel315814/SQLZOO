@@ -148,28 +148,74 @@ WHERE continent = 'South America';
 - **5. SELECT from world **
 ```
 solution:
-SELECT name, continent, population FROM world
+SELECT name, population
+FROM world
+WHERE name IN ('France', 'Germany', 'Italy');
 ```
-- **1. SELECT from world **
-```
-solution:
-SELECT name, continent, population FROM world
-```
-- **1. SELECT from world **
+- **6. SELECT from world **
 ```
 solution:
-SELECT name, continent, population FROM world
+SELECT name
+FROM world
+WHERE name LIKE '%United%';
 ```
-- **1. SELECT from world **
+- **7. SELECT from world **
 ```
 solution:
-SELECT name, continent, population FROM world
+SELECT name, population, area
+FROM world
+WHERE area > 3000000 OR population > 250000000;
 ```
-- **1. SELECT from world **
+- **8. SELECT from world **
 ```
-SELECT name, continent, population FROM world
+solution:
+SELECT name, population, area
+FROM world
+WHERE (area > 3000000 AND population <= 250000000) 
+   OR (population > 250000000 AND area <= 3000000);
 ```
-- **1. SELECT from world **
+- **9. SELECT from world **
 ```
-SELECT name, continent, population FROM world
+solution:
+SELECT name, 
+       ROUND(population / 1000000, 2) AS population_millions, 
+       ROUND(gdp / 1000000000, 2) AS gdp_billions
+FROM world
+WHERE continent = 'South America';
 ```
+- **10. SELECT from world **
+```
+solution:
+SELECT name, 
+       ROUND(gdp / population, -3) AS per_capita_gdp
+FROM world
+WHERE gdp >= 1000000000000;
+```
+- **11. SELECT from world **
+```
+solution:
+SELECT name, capital
+FROM world
+WHERE LENGTH(name) = LENGTH(capital);
+```
+- **12. SELECT from world **
+```
+solution:
+SELECT name, capital
+FROM world
+WHERE LEFT(name, 1) = LEFT(capital, 1)
+  AND name <> capital;
+```
+- **13. SELECT from world **
+```
+solution:
+SELECT name
+FROM world
+WHERE name LIKE '%a%' 
+  AND name LIKE '%e%' 
+  AND name LIKE '%i%' 
+  AND name LIKE '%o%' 
+  AND name LIKE '%u%' 
+  AND name NOT LIKE '% %';
+```
+
