@@ -415,35 +415,84 @@ ORDER BY name;
 - **4. SELECT in SELECT **
 ```
 Solution:
-
+SELECT name, population
+FROM world
+WHERE population > (SELECT population FROM world WHERE name = 'United Kingdom')
+  AND population < (SELECT population FROM world WHERE name = 'Germany');
 ```
 - **5. SELECT in SELECT **
 ```
 Solution:
-
+SELECT name, 
+       CONCAT(ROUND((population / (SELECT population FROM world WHERE name = 'Germany')) * 100, 0), '%') AS percentage
+FROM world
+WHERE continent = 'Europe';
 ```
 - **6. SELECT in SELECT **
 ```
 Solution:
-
+SELECT name
+FROM world
+WHERE gdp > (SELECT MAX(gdp) FROM world WHERE continent = 'Europe')
+  AND gdp IS NOT NULL;
 ```
 - **7. SELECT in SELECT **
 ```
 Solution:
-
+SELECT continent, name, area
+FROM world x
+WHERE area >= ALL
+  (SELECT area FROM world y
+   WHERE y.continent = x.continent
+     AND area > 0);
 ```
 - **8. SELECT in SELECT **
 ```
 Solution:
-
+SELECT continent, name
+FROM world
+WHERE (continent, name) IN (
+    SELECT continent, MIN(name)
+    FROM world
+    GROUP BY continent
+);
 ```
 - **9. SELECT in SELECT **
 ```
 Solution:
-
+SELECT name, continent, population
+FROM world
+WHERE continent IN (
+    SELECT continent
+    FROM world
+    GROUP BY continent
+    HAVING MAX(population) <= 25000000
+);
 ```
 - **10. SELECT in SELECT **
 ```
 Solution:
-
+SELECT name, continent
+FROM world x
+WHERE population/3 > ALL(
+SELECT population
+FROM world y
+WHERE x.continent = y.continent
+AND x.name != y.name)
 ```
+# SELECT in SELECT Quiz ####
+- **1. SELECT in SELECT Quiz **
+![image](https://github.com/user-attachments/assets/d13d2413-04da-4385-9ec3-515cca0b550e)
+- **2. SELECT in SELECT Quiz **
+![image](https://github.com/user-attachments/assets/3e6c903b-cd0e-4514-85bb-da53fd025511)
+- **3. SELECT in SELECT Quiz **
+![image](https://github.com/user-attachments/assets/e0721d98-06de-4477-af60-17929b1f4494)
+- **4. SELECT in SELECT Quiz **
+![image](https://github.com/user-attachments/assets/513dc6b3-5b80-4508-a62e-d20e180360e1)
+- **5. SELECT in SELECT Quiz **
+![image](https://github.com/user-attachments/assets/81b419fa-d0c1-410b-8cda-2361b862f1a2)
+- **6. SELECT in SELECT Quiz **
+![image](https://github.com/user-attachments/assets/0efdf05a-8956-464b-8d34-778c91307b1e)
+- **7. SELECT in SELECT Quiz **
+![image](https://github.com/user-attachments/assets/8bbb7bf3-14d6-409f-ab47-77b6956c1e31)
+
