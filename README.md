@@ -495,4 +495,79 @@ AND x.name != y.name)
 ![image](https://github.com/user-attachments/assets/0efdf05a-8956-464b-8d34-778c91307b1e)
 - **7. SELECT in SELECT Quiz **
 ![image](https://github.com/user-attachments/assets/8bbb7bf3-14d6-409f-ab47-77b6956c1e31)
+# SUM and COUNT ####
+- **1. SUM and COUNT **
+```
+Solution:
+SELECT SUM(population)
+FROM world
+```
+- **2. SUM and COUNT **
+```
+Solution:
+SELECT DISTINCT continent
+FROM world;
+```
+- **3. SUM and COUNT **
+```
+Solution:
+SELECT SUM(gdp) AS total_gdp
+FROM world
+WHERE continent = 'Africa';
+```
+- **4. SUM and COUNT **
+```
+Solution:
+SELECT COUNT(*)
+FROM world
+WHERE area >= 1000000;
+```
+- **5. SUM and COUNT **
+```
+Solution:
+SELECT SUM(population)
+FROM world
+WHERE name IN ('Estonia', 'Latvia', 'Lithuania');
+```
+- **6. SUM and COUNT **
+```
+Solution:
+SELECT continent, COUNT(name) AS num_countries
+FROM world
+GROUP BY continent;
+```
+- **7. SUM and COUNT **
+```
+Solution:
+SELECT continent, COUNT(name) AS num_countries
+FROM world
+WHERE population >= 10000000
+GROUP BY continent;
+```
+- **8. SUM and COUNT **
+```
+Solution:
+SELECT continent
+FROM world
+GROUP BY continent
+HAVING SUM(population) >= 100000000;
+```
+# SUM and COUNT Quiz ####
+- **1. SUM and COUNT Quiz **
+![image](https://github.com/user-attachments/assets/722cd369-e271-4600-80bc-2bf9173217db)
+- **2. SUM and COUNT Quiz **
+![image](https://github.com/user-attachments/assets/0baa0ab6-cdd8-4d20-bcd3-78f5bfda723a)
+- **3. SUM and COUNT Quiz **
+![image](https://github.com/user-attachments/assets/55f3a35e-494f-4919-8d13-f89c34e8160b)
+- **4. SUM and COUNT Quiz **
+![image](https://github.com/user-attachments/assets/a72f263f-3cdc-4147-8bc0-237bb2cef7b8)d
+- **5. SUM and COUNT Quiz **
+![image](https://github.com/user-attachments/assets/e5a772e4-5d37-4818-b7b1-4062d2411d11)
+- **6. SUM and COUNT Quiz **
+![image](https://github.com/user-attachments/assets/021e7105-3c16-4edb-bf72-1e183f1d11f9)
+- **7. SUM and COUNT Quiz **
+![image](https://github.com/user-attachments/assets/788f03e5-ddc2-4eb6-8473-74966554f42e)
+- **8. SUM and COUNT Quiz **
+![image](https://github.com/user-attachments/assets/48fad411-e8ba-4f6e-a64c-6959cb1c2b90)
+
 
