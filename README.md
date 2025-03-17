@@ -24,7 +24,7 @@ SELECT name, area FROM world
 - **1. SELECT basics Quiz **
 ![Captura de pantalla 2025-03-16 201848](https://github.com/user-attachments/assets/2fe6e13f-a645-4c0f-9037-d1be453a9d6f)
 - **2. SELECT basics Quiz **
-![Captura de pantalla 2025-03-16 201916](https://github.com/user-attachments/assets/4b61c4e8-feef-4c75-a29e-51471f003070)
+![Captura de pantalla 2025-03-16 203911](https://github.com/user-attachments/assets/3e0451c6-2247-47b0-aa70-02152a8e7186)
 - **3. SELECT basics Quiz **
 [![Captura-de-pantalla-2025-03-16-201923.jpg](https://i.postimg.cc/wMQw97RP/Captura-de-pantalla-2025-03-16-201923.jpg)](https://postimg.cc/2L3QwjwF)
 - **4. SELECT basics Quiz **
