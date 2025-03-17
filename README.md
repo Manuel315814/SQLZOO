@@ -20,7 +20,35 @@ solution:
 SELECT name, area FROM world
   WHERE area BETWEEN 200000 AND 250000
 ```
-
+# SELECT basics Quiz ####
+- **1. SELECT basics Quiz **
+```
+![image](https://github.com/user-attachments/assets/b624ae24-da0a-43c2-accb-63e98af80f40)
+```
+- **2. SELECT basics Quiz **
+```
+![image](https://github.com/user-attachments/assets/52cc38b6-bf1d-4a66-92ee-c8bab8ac4368)
+```
+- **3. SELECT basics Quiz **
+```
+![image](https://github.com/user-attachments/assets/de8df29b-7ddc-48e8-a3e4-4eecb6a100cb)
+```
+- **4. SELECT basics Quiz **
+```
+![image](https://github.com/user-attachments/assets/cdcb9fd6-582a-468a-aa4c-df327447770a)
+```
+- **5. SELECT basics Quiz **
+```
+![image](https://github.com/user-attachments/assets/bdf9465b-fa07-4a77-ab80-6ea49ab1a7e5)
+```
+- **6. SELECT basics Quiz **
+```
+![image](https://github.com/user-attachments/assets/8303f2ff-ae0c-4cc8-a0b4-a262c1402096)
+```
+- **7. SELECT basics Quiz **
+```
+![image](https://github.com/user-attachments/assets/aa4c2d2b-633c-49a6-b7cc-c808d5366097)
+```
 # SELECT names #
 
 - **1. SELECT names **
