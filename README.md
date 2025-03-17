@@ -231,19 +231,21 @@ WHERE name LIKE '%a%'
   AND name LIKE '%o%' 
   AND name LIKE '%u%' 
   AND name NOT LIKE '% %';
+```
 # SELECT from world Quiz ####
 - **1. SELECT from world Quiz **
 ![Captura de pantalla 2025-03-16 203911](https://github.com/user-attachments/assets/6024b2f0-da41-426e-b0e0-876afabcff13)
 - **2. SELECT from world Quiz **
-
+![Captura de pantalla 2025-03-16 204627](https://github.com/user-attachments/assets/7af0cf0e-74a4-46ff-a263-83d6139ee471)
 - **3. SELECT from world Quiz **
-
+![Captura de pantalla 2025-03-16 204641](https://github.com/user-attachments/assets/26b009e8-d83a-4bfd-a0ca-8685cd0407bf)
 - **4. SELECT from world Quiz **
-
+![Captura de pantalla 2025-03-16 204656](https://github.com/user-attachments/assets/196aef57-86e3-4e51-932f-a482f6c03a09)
 - **5. SELECT from world Quiz **
-
+![Captura de pantalla 2025-03-16 204710](https://github.com/user-attachments/assets/6054ad46-8a0a-4478-98fd-66fced584998)
 - **6. SELECT from world Quiz **
-
+![Captura de pantalla 2025-03-16 204725](https://github.com/user-attachments/assets/4934d82b-d933-4b05-a6ab-c7f6de969d22)
 - **7. SELECT from world Quiz **
+![Captura de pantalla 2025-03-16 204739](https://github.com/user-attachments/assets/d2f6080a-5dce-4d9f-80c2-1a74e2b65eb8)
 
 
