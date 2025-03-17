@@ -918,6 +918,106 @@ WHEN teacher.dept = 3 THEN'Art'
 ELSE 'None'END
 FROM teacher
 ```
+# Using NULL Quiz ####
+- **1. Using NULL Quiz **
+![image](https://github.com/user-attachments/assets/3917ac1f-d436-4413-982b-7881602324e7)
+- **2. Using NULL Quiz **
+![image](https://github.com/user-attachments/assets/d694e165-45cb-4ce6-9c8e-003a2c63f9a1)
+- **3. Using NULL Quiz **
+![image](https://github.com/user-attachments/assets/55fb3890-8011-4bd8-a273-7ee2d131fab1)
+- **4. Using NULL Quiz **
+![image](https://github.com/user-attachments/assets/20b87f44-5012-4e95-8f09-c25ac7f8aae1)
+- **5. Using NULL Quiz **
+![image](https://github.com/user-attachments/assets/f3665b91-0b55-4416-9541-9a0e0b627070)
+- **6. Using NULL Quiz **
+![image](https://github.com/user-attachments/assets/3a5097c8-7bb4-4e73-8fa8-49c5f1ff1474)
+# self JOIN ####
+- **1. self JOIN **
+```
+Solution:
+SELECT COUNT(*) 
+FROM stops
+```
+- **2. self JOIN **
+```
+Solution:
+SELECT id
+FROM stops
+WHERE name = 'Craiglockhart'
+```
+- **3. self JOIN **
+```
+Solution:
+SELECT stops.id, stops.name
+FROM stops
+JOIN route ON stops.id = route.stop
+WHERE route.num = '4' AND route.company = 'LRT';
+```
+- **4. self JOIN **
+```
+Solution:
+SELECT company, num, COUNT(*)
+FROM route
+WHERE stop = 149 OR stop = 53
+GROUP BY company, num
+HAVING COUNT(*) = 2;
+```
+- **5. self JOIN **
+```
+Solution:
+SELECT a.company, a.num, a.stop, b.stop
+FROM route a
+JOIN route b ON (a.company = b.company AND a.num = b.num)
+WHERE a.stop = 53 AND b.stop = 149;
+```
+- **6. self JOIN **
+```
+Solution:
+SELECT a.company, a.num, stopa.name, stopb.name
+FROM route a
+JOIN route b ON (a.company = b.company AND a.num = b.num)
+JOIN stops stopa ON (a.stop = stopa.id)
+JOIN stops stopb ON (b.stop = stopb.id)
+WHERE stopa.name = 'Craiglockhart' AND stopb.name = 'London Road';
+```
+- **7. self JOIN **
+```
+Solution:
+SELECT DISTINCT a.company,a.num
+FROM route a JOIN route b ON 
+(a.company=b.company AND a.num=b.num)
+JOIN stops stopa ON(a.stop=stopa.id)
+JOIN stops stopb ON(b.stop=stopb.id)
+WHERE stopa.name='Haymarket' AND stopb.name= 'Leith'
+```
+- **8. self JOIN **
+```
+Solution:
+SELECT a.company, a.num
+FROM route a
+JOIN route b ON (a.company = b.company AND a.num = b.num)
+JOIN stops stopa ON (a.stop = stopa.id)
+JOIN stops stopb ON (b.stop = stopb.id)
+WHERE stopa.name = 'Craiglockhart' AND stopb.name = 'Tollcross';
+```
+- **9. self JOIN **
+```
+Solution:
+SELECT DISTINCT stopb.name,a.company,a.num
+FROM route a JOIN route b ON 
+(a.company=b.company AND a.num=b.num)
+JOIN stops stopa ON(a.stop=stopa.id)
+JOIN stops stopb ON(b.stop=stopb.id)
+WHERE stopa.name='Craiglockhart' 
+AND a.company='LRT'
+```
+# self JOIN Quiz ####
+- **1. self JOIN Quiz  **
+![image](https://github.com/user-attachments/assets/683e58fa-c70f-4301-8bbd-4bfc55a87313)
+- **2. self JOIN Quiz  **
+![image](https://github.com/user-attachments/assets/638cda12-f3b2-48df-ba31-7c4a5224c219)
+- **3. self JOIN Quiz  **
+![image](https://github.com/user-attachments/assets/82e7a425-4145-4215-a24b-d14676c15a0f)
 
 
 
