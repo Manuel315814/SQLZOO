@@ -231,5 +231,8 @@ WHERE name LIKE '%a%'
   AND name LIKE '%o%' 
   AND name LIKE '%u%' 
   AND name NOT LIKE '% %';
-```
+# SELECT from world Quiz ####
+- **1. SELECT from world Quiz **
+![Captura de pantalla 2025-03-16 203911](https://github.com/user-attachments/assets/3230ced8-ab2b-468e-8fc6-37c038f8576d)
+
 
