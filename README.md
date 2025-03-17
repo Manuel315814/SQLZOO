@@ -250,61 +250,61 @@ WHERE name LIKE '%a%'
 
 # SELECT from nobel ####
 - **1. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT yr, subject, winner
   FROM nobel
  WHERE yr = 1950
-´´´
+```
 - **2. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT winner
 FROM nobel
 WHERE yr = 1962
   AND subject = 'literature';
-´´´
+```
 - **3. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT yr, subject
 FROM nobel
 WHERE winner = 'Albert Einstein';
-´´´
+```
 - **4. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT winner
 FROM nobel
 WHERE subject = 'peace'
   AND yr >= 2000;
-´´´
+```
 - **5. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT yr, subject, winner
 FROM nobel
 WHERE subject = 'literature'
   AND yr BETWEEN 1980 AND 1989;
-´´´
+```
 - **6. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT *
 FROM nobel
 WHERE winner IN ('Theodore Roosevelt',
 'Thomas Woodrow Wilson', 'Jimmy Carter',
 'Barack Obama');
-´´´
+```
 - **7. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT winner
 FROM nobel
 WHERE winner LIKE 'john%'
-´´´
+```
 - **8. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT yr, subject, winner
 FROM nobel
@@ -315,17 +315,17 @@ UNION
 SELECT yr, subject, winner
 FROM nobel
 WHERE subject = 'chemistry' AND yr = 1984;
-´´´
+```
 - **9. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT yr, subject, winner
 FROM nobel
 WHERE yr = 1980
   AND subject NOT IN ('chemistry', 'medicine');
-´´´
+```
 - **10. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT yr, subject, winner
 FROM nobel
@@ -338,35 +338,35 @@ SELECT yr, subject, winner
 FROM nobel
 WHERE subject = 'literature' 
   AND yr >= 2004;
-´´´
+```
 - **11. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT *
 FROM nobel
 WHERE winner = 'PETER GRÜNBERG';
-´´´
+```
 - **12. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT *
 FROM nobel
 WHERE winner = 'EUGENE O''NEILL';
-´´´
+```
 - **13. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT winner, yr, subject
 FROM nobel
 WHERE winner LIKE 'Sir%'
 ORDER BY yr DESC, winner ASC
-´´´
+```
 - **14. SELECT from nobel **
-´´´
+```
 Solution:
 SELECT winner, subject
  FROM nobel
 WHERE yr=1984
 ORDER BY subject IN ('physics', 'chemistry'),subject,winner
-´´´
+```
 
