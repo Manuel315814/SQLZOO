@@ -22,13 +22,9 @@ SELECT name, area FROM world
 ```
 # SELECT basics Quiz ####
 - **1. SELECT basics Quiz **
-´´´
-[![Captura-de-pantalla-2025-03-16-201848.jpg](https://i.postimg.cc/wBnf2KdW/Captura-de-pantalla-2025-03-16-201848.jpg)](https://postimg.cc/p9YJV6r8)
-´´´
+![Captura de pantalla 2025-03-16 201848](https://github.com/user-attachments/assets/2fe6e13f-a645-4c0f-9037-d1be453a9d6f)
 - **2. SELECT basics Quiz **
-´´´
-[![Captura-de-pantalla-2025-03-16-201916.jpg](https://i.postimg.cc/d36jzpzc/Captura-de-pantalla-2025-03-16-201916.jpg)](https://postimg.cc/wRtNNfqw)
-´´´
+![Captura de pantalla 2025-03-16 201916](https://github.com/user-attachments/assets/4b61c4e8-feef-4c75-a29e-51471f003070)
 - **3. SELECT basics Quiz **
 [![Captura-de-pantalla-2025-03-16-201923.jpg](https://i.postimg.cc/wMQw97RP/Captura-de-pantalla-2025-03-16-201923.jpg)](https://postimg.cc/2L3QwjwF)
 - **4. SELECT basics Quiz **
@@ -39,8 +35,8 @@ SELECT name, area FROM world
 ![Captura de pantalla 2025-03-16 201938](https://github.com/user-attachments/assets/f51995ca-e2e4-48de-b416-5c7bdc7d8d62)
 - **7. SELECT basics Quiz **
 ![Captura de pantalla 2025-03-16 201943](https://github.com/user-attachments/assets/838609ad-5d73-425d-9b3c-65fe7f7e1567)
-# SELECT names #
 
+# SELECT names #
 - **1. SELECT names **
 ```
 solution:
