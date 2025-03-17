@@ -369,4 +369,19 @@ SELECT winner, subject
 WHERE yr=1984
 ORDER BY subject IN ('physics', 'chemistry'),subject,winner
 ```
+# SELECT from nobel Quiz ####
+- **1. SELECT from nobel Quiz **
+![image](https://github.com/user-attachments/assets/8cde79a3-0b69-4cf0-ab7e-ce331986530c)
+- **2. SELECT from nobel Quiz **
+![image](https://github.com/user-attachments/assets/3f2ce820-4774-46b7-aad4-307890b27ce5)
+- **3. SELECT from nobel Quiz **
+![image](https://github.com/user-attachments/assets/c8d33476-6bde-4e62-9883-3133f4a7dad6)
+- **4. SELECT from nobel Quiz **
+![image](https://github.com/user-attachments/assets/c67ac6e2-7268-4a91-87ef-20305cbdb498)
+- **5. SELECT from nobel Quiz **
+![image](https://github.com/user-attachments/assets/2e182ba2-57d6-43bc-965d-8f367477abe9)
+- **6. SELECT from nobel Quiz **
+![image](https://github.com/user-attachments/assets/a35794c8-0be8-4946-b326-6b2fa806ddfb)
+- **7. SELECT from nobel Quiz **
+![image](https://github.com/user-attachments/assets/deb48a5f-3873-4511-8db9-d5efce476941)
 
