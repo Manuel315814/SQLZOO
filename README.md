@@ -23,7 +23,7 @@ SELECT name, area FROM world
 # SELECT basics Quiz ####
 - **1. SELECT basics Quiz **
 ```
-![Mi Imagen](![image](https://github.com/user-attachments/assets/a18957ee-7ec6-4c29-b7d5-8bfadbd44d4a))
+![image](https://github.com/user-attachments/assets/9af77f39-47e2-4008-a33c-ac0f4652c9f0)
 ```
 - **2. SELECT basics Quiz **
 ```
