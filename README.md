@@ -764,12 +764,24 @@ WHERE actor.name = 'Harrison Ford'
 - **10. More JOIN **
 ```
 Solution:
-
+SELECT title,name
+FROM movie 
+JOIN casting 
+JOIN actor 
+WHERE casting.ord = 1
+AND movie.id=casting.movieid
+AND actor.id=casting.actorid
+AND movie.yr = 1962
 ```
 - **11. More JOIN **
 ```
 Solution:
-
+SELECT yr,COUNT(title)FROM 
+ movie JOIN casting ON movie.id=movieid
+   JOIN actor ON actorid=actor.id
+where name='Rock Hudson'
+GROUP BY yr
+HAVING COUNT(title) > 2
 ```
 - **12. More JOIN **
 ```
